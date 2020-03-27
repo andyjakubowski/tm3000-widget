@@ -1131,7 +1131,7 @@ const Tokenhost = (function makeTokenhost() {
     const updateStyles = function updateStyles(styles) {
       resetStyles();
       styles.forEach(({ name, value }) => {
-        root.style.setProperty(`--remote-${name}`, value);
+        root.style.setProperty(`--${name}`, value);
       });
     };
 
